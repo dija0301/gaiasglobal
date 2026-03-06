@@ -37,22 +37,21 @@
     }
     .nav-brand { display: flex; align-items: center; gap: 0.9rem; text-decoration: none; }
     .nav-wordmark { display: flex; flex-direction: column; line-height: 1; gap: 0.15rem; }
+    /* "Gaias" super label — decorative, kept small but legible at 11px min */
     .nav-super {
-      font-family: 'Josefin Sans', sans-serif; font-weight: 200;
-      font-size: 0.36rem; letter-spacing: 0.55em; text-transform: uppercase;
-      color: rgba(122,79,46,0.70);
+      font-family: 'Josefin Sans', sans-serif; font-weight: 300;
+      font-size: 11px; letter-spacing: 0.45em; text-transform: uppercase;
+      color: rgba(122,79,46,0.75);
     }
     .nav-name {
-      font-weight: 300; font-size: 0.9rem; letter-spacing: 0.5em;
+      font-weight: 300; font-size: 15px; letter-spacing: 0.4em;
       text-transform: uppercase; color: var(--earth);
     }
-    .nav-links {
-      display: flex; align-items: center; gap: 2rem;
-    }
+    .nav-links { display: flex; align-items: center; gap: 2rem; }
     .nav-links a {
-      font-family: 'Josefin Sans', sans-serif; font-weight: 200;
-      font-size: 0.44rem; letter-spacing: 0.35em; text-transform: uppercase;
-      color: rgba(122,79,46,0.77); text-decoration: none; transition: color 0.2s;
+      font-family: 'Josefin Sans', sans-serif; font-weight: 300;
+      font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase;
+      color: rgba(122,79,46,0.85); text-decoration: none; transition: color 0.2s;
       white-space: nowrap;
     }
     .nav-links a:hover { color: var(--clay); }
@@ -63,7 +62,6 @@
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
         padding: 0 0.5rem;
-        /* fade edges to hint scrollability */
         -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
         mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
       }
@@ -91,9 +89,9 @@
     }
     .hero-mark { margin-bottom: 2.5rem; opacity: 0; animation: rise 1.2s ease forwards; }
     .hero-eyebrow {
-      font-family: 'Josefin Sans', sans-serif; font-weight: 200;
-      font-size: 0.44rem; letter-spacing: 0.65em; text-transform: uppercase;
-      color: rgba(122,79,46,0.62); margin-bottom: 1.8rem;
+      font-family: 'Josefin Sans', sans-serif; font-weight: 300;
+      font-size: 11px; letter-spacing: 0.55em; text-transform: uppercase;
+      color: rgba(122,79,46,0.75); margin-bottom: 1.8rem;
       opacity: 0; animation: rise 1.2s 0.12s ease forwards;
     }
     .hero-name {
@@ -102,14 +100,15 @@
       color: var(--earth); line-height: 1; margin-bottom: 1rem;
       opacity: 0; animation: rise 1.2s 0.25s ease forwards;
     }
+    /* Tagline uses Cormorant italic as a deliberate typographic accent — appropriate at this size */
     .hero-tagline {
-      font-style: italic; font-weight: 300; font-size: 1.05rem;
-      letter-spacing: 0.22em; color: rgba(122,79,46,0.87); margin-bottom: 2.5rem;
+      font-style: italic; font-weight: 300; font-size: 1.15rem;
+      letter-spacing: 0.18em; color: rgba(122,79,46,0.90); margin-bottom: 2.5rem;
       opacity: 0; animation: rise 1.2s 0.4s ease forwards;
     }
     .hero-desc {
-      max-width: 520px; font-size: 1.08rem; line-height: 1.9;
-      color: rgba(46,26,10,0.78); font-style: normal;
+      max-width: 520px; font-size: 1.1rem; line-height: 1.85;
+      color: rgba(46,26,10,0.82); font-style: normal;
       opacity: 0; animation: rise 1.2s 0.55s ease forwards;
     }
     .hero-nav {
@@ -117,14 +116,14 @@
       justify-content: center; opacity: 0; animation: rise 1.2s 0.7s ease forwards;
     }
     .hero-nav a {
-      font-family: 'Josefin Sans', sans-serif; font-weight: 200;
-      font-size: 0.46rem; letter-spacing: 0.35em; text-transform: uppercase;
-      color: rgba(122,79,46,0.77); text-decoration: none;
-      padding-bottom: 2px; border-bottom: 1px solid rgba(122,79,46,0.2);
+      font-family: 'Josefin Sans', sans-serif; font-weight: 300;
+      font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase;
+      color: rgba(122,79,46,0.85); text-decoration: none;
+      padding-bottom: 2px; border-bottom: 1px solid rgba(122,79,46,0.25);
       transition: all 0.2s;
     }
     .hero-nav a:hover { color: var(--clay); border-color: var(--clay); }
-    .hero-nav a.primary { color: var(--clay); border-color: rgba(122,79,46,0.45); }
+    .hero-nav a.primary { color: var(--clay); border-color: rgba(122,79,46,0.5); }
 
     /* ── MOBILE NAV HAMBURGER ── */
     .nav-toggle {
@@ -151,17 +150,18 @@
       .hero-nav a {
         padding: 0.65rem 0; border-bottom: none;
         border-top: 1px solid rgba(122,79,46,0.1); width: 100%; text-align: center;
-        font-size: 0.5rem;
+        font-size: 12px;
       }
       .hero-nav a:first-child { border-top: none; }
     }
 
     /* ── SHARED SECTION CHROME ── */
     .section-header { text-align: center; padding: 5.5rem 2rem 3.5rem; }
+    /* Section labels are decorative eyebrow text — 11px is minimum acceptable for all-caps labels */
     .section-label {
-      font-family: 'Josefin Sans', sans-serif; font-weight: 200;
-      font-size: 0.44rem; letter-spacing: 0.55em; text-transform: uppercase;
-      color: rgba(122,79,46,0.75); margin-bottom: 1.2rem; display: block;
+      font-family: 'Josefin Sans', sans-serif; font-weight: 300;
+      font-size: 11px; letter-spacing: 0.5em; text-transform: uppercase;
+      color: rgba(122,79,46,0.80); margin-bottom: 1.2rem; display: block;
     }
     .section-title {
       font-weight: 300; font-size: clamp(1.6rem, 3vw, 2.2rem);
@@ -173,35 +173,36 @@
       margin: 0 auto 1.5rem;
     }
     .section-body {
-      max-width: 560px; margin: 0 auto; font-size: 1.02rem;
-      line-height: 1.9; color: rgba(46,26,10,0.75); font-style: normal;
+      max-width: 560px; margin: 0 auto; font-size: 1.05rem;
+      line-height: 1.85; color: rgba(46,26,10,0.80); font-style: normal;
     }
 
     /* ── PULL QUOTE ── */
     .pull-quote { background: var(--earth); padding: 5.5rem 2rem; text-align: center; }
+    /* Pull quote italic is a deliberate typographic convention for featured quotations */
     .pull-quote-text {
       max-width: 720px; margin: 0 auto;
       font-size: clamp(1.25rem, 2.8vw, 1.75rem); font-weight: 300;
-      font-style: italic; line-height: 1.6; color: rgba(237,224,204,0.82);
+      font-style: italic; line-height: 1.65; color: rgba(237,224,204,0.90);
       letter-spacing: 0.03em;
     }
-    .pull-quote-text em { font-style: normal; color: rgba(196,162,90,0.88); }
+    .pull-quote-text em { font-style: normal; color: rgba(196,162,90,0.95); }
 
     /* ── THE PROBLEM ── */
     .problem { background: var(--bark); border-bottom: 1px solid rgba(196,162,90,0.06); }
     .problem-inner { max-width: 960px; margin: 0 auto; padding: 6.5rem 3rem 5.5rem; }
     .problem-eyebrow {
-      font-family: 'Josefin Sans', sans-serif; font-weight: 200;
-      font-size: 0.42rem; letter-spacing: 0.55em; text-transform: uppercase;
-      color: rgba(196,162,90,0.5); margin-bottom: 1.6rem; display: block;
+      font-family: 'Josefin Sans', sans-serif; font-weight: 300;
+      font-size: 11px; letter-spacing: 0.5em; text-transform: uppercase;
+      color: rgba(196,162,90,0.75); margin-bottom: 1.6rem; display: block;
     }
     .problem-headline {
       font-weight: 300; font-size: clamp(1.7rem, 3.5vw, 2.6rem);
-      letter-spacing: 0.1em; color: rgba(237,224,204,0.88); line-height: 1.25; margin-bottom: 0.3rem;
+      letter-spacing: 0.1em; color: rgba(237,224,204,0.95); line-height: 1.25; margin-bottom: 0.3rem;
     }
     .problem-headline-sub {
       font-style: italic; font-size: clamp(1rem, 2vw, 1.25rem);
-      color: rgba(196,162,90,0.7); letter-spacing: 0.06em;
+      color: rgba(196,162,90,0.85); letter-spacing: 0.06em;
       margin-bottom: 3.5rem; display: block;
     }
     .problem-grid {
@@ -216,23 +217,25 @@
     }
     .problem-item:hover { background: rgba(196,162,90,0.04); }
     .problem-item-num {
-      font-weight: 300; font-size: 1.8rem; color: rgba(196,162,90,0.22);
+      font-weight: 300; font-size: 1.8rem; color: rgba(196,162,90,0.35);
       line-height: 1; margin-bottom: 0.8rem; letter-spacing: 0.1em;
     }
+    /* All-caps labels — 11px is WCAG minimum for decorative labels */
     .problem-item-label {
-      font-family: 'Josefin Sans', sans-serif; font-weight: 200;
-      font-size: 0.44rem; letter-spacing: 0.42em; text-transform: uppercase;
-      color: rgba(196,162,90,0.65); margin-bottom: 0.8rem; display: block;
+      font-family: 'Josefin Sans', sans-serif; font-weight: 300;
+      font-size: 11px; letter-spacing: 0.4em; text-transform: uppercase;
+      color: rgba(196,162,90,0.85); margin-bottom: 0.8rem; display: block;
     }
     .problem-item-text {
-      font-size: 0.95rem; line-height: 1.82;
-      color: rgba(237,224,204,0.80); font-style: normal;
+      font-size: 1rem; line-height: 1.82;
+      color: rgba(237,224,204,0.90); font-style: normal;
     }
-    .problem-item-text em { font-style: normal; color: rgba(196,162,90,0.75); }
+    /* em within body text uses italic as semantic emphasis — intentional */
+    .problem-item-text em { font-style: italic; color: rgba(196,162,90,0.90); }
     .problem-close {
-      font-size: clamp(1.05rem, 2vw, 1.3rem); font-style: italic; font-weight: 300;
-      line-height: 1.72; color: rgba(196,162,90,0.92);
-      padding-left: 1.8rem; border-left: 1px solid rgba(196,162,90,0.2); max-width: 700px;
+      font-size: clamp(1.05rem, 2vw, 1.3rem); font-style: normal; font-weight: 300;
+      line-height: 1.75; color: rgba(196,162,90,0.95);
+      padding-left: 1.8rem; border-left: 2px solid rgba(196,162,90,0.35); max-width: 700px;
     }
 
     /* ── BELIEF ── */
@@ -244,20 +247,20 @@
     }
     @media (max-width: 680px) { .belief-top { grid-template-columns: 1fr; gap: 2.5rem; } }
     .belief-eyebrow {
-      font-family: 'Josefin Sans', sans-serif; font-weight: 200;
-      font-size: 0.42rem; letter-spacing: 0.55em; text-transform: uppercase;
-      color: rgba(122,79,46,0.55); margin-bottom: 1.4rem; display: block;
+      font-family: 'Josefin Sans', sans-serif; font-weight: 300;
+      font-size: 11px; letter-spacing: 0.5em; text-transform: uppercase;
+      color: rgba(122,79,46,0.72); margin-bottom: 1.4rem; display: block;
     }
     .belief-title {
       font-weight: 300; font-size: clamp(1.5rem, 3vw, 2.2rem);
-      letter-spacing: 0.12em; color: var(--earth); line-height: 1.28;
+      letter-spacing: 0.12em; color: var(--earth); line-height: 1.3;
     }
     .belief-statement {
-      padding-top: 0.4rem; font-size: clamp(1rem, 1.8vw, 1.2rem);
-      font-style: normal; font-weight: 300; line-height: 1.82;
-      color: rgba(46,26,10,0.82);
+      padding-top: 0.4rem; font-size: clamp(1rem, 1.8vw, 1.15rem);
+      font-style: normal; font-weight: 300; line-height: 1.85;
+      color: rgba(46,26,10,0.85);
     }
-    .belief-statement em { font-style: normal; color: var(--clay); }
+    .belief-statement em { font-style: italic; color: var(--clay); font-weight: 400; }
     .belief-pillars {
       display: grid; grid-template-columns: repeat(3, 1fr);
       gap: 1px; background: rgba(122,79,46,0.09);
@@ -267,15 +270,15 @@
     .belief-pillar { background: var(--parchment); padding: 2.5rem 2.2rem; transition: background 0.22s; }
     .belief-pillar:hover { background: var(--cream); }
     .belief-pillar-glyph {
-      font-size: 2rem; color: rgba(196,162,90,0.48); line-height: 1; margin-bottom: 1rem;
+      font-size: 2rem; color: rgba(196,162,90,0.55); line-height: 1; margin-bottom: 1rem;
     }
     .belief-pillar-name {
-      font-family: 'Josefin Sans', sans-serif; font-weight: 200;
-      font-size: 0.46rem; letter-spacing: 0.38em; text-transform: uppercase;
-      color: rgba(122,79,46,0.72); margin-bottom: 0.75rem;
+      font-family: 'Josefin Sans', sans-serif; font-weight: 300;
+      font-size: 11px; letter-spacing: 0.35em; text-transform: uppercase;
+      color: rgba(122,79,46,0.85); margin-bottom: 0.75rem;
     }
     .belief-pillar-text {
-      font-size: 0.92rem; line-height: 1.82; color: rgba(46,26,10,0.78); font-style: normal;
+      font-size: 1rem; line-height: 1.82; color: rgba(46,26,10,0.82); font-style: normal;
     }
 
     /* ── PRINCIPLES ── */
@@ -290,13 +293,14 @@
     .principle-card.full { grid-column: 1 / -1; }
     .principle-numeral {
       font-weight: 300; font-size: 2.8rem; letter-spacing: 0.15em;
-      color: rgba(196,162,90,0.58); line-height: 1; margin-bottom: 0.6rem;
+      color: rgba(196,162,90,0.55); line-height: 1; margin-bottom: 0.6rem;
     }
-    .principle-name { font-weight: 400; font-size: 1rem; letter-spacing: 0.1em; color: var(--earth); margin-bottom: 0.9rem; }
-    .principle-body { font-size: 0.94rem; line-height: 1.82; color: rgba(46,26,10,0.82); font-style: normal; }
+    .principle-name { font-weight: 500; font-size: 1.05rem; letter-spacing: 0.05em; color: var(--earth); margin-bottom: 0.9rem; }
+    .principle-body { font-size: 1rem; line-height: 1.82; color: rgba(46,26,10,0.82); font-style: normal; }
+    /* Principle notes use italic intentionally as a sub-category/aside convention */
     .principle-note {
-      margin-top: 1rem; padding-top: 0.9rem; border-top: 1px solid rgba(122,79,46,0.07);
-      font-size: 0.84rem; font-style: italic; color: rgba(122,79,46,0.80);
+      margin-top: 1rem; padding-top: 0.9rem; border-top: 1px solid rgba(122,79,46,0.1);
+      font-size: 0.9rem; font-style: italic; color: rgba(122,79,46,0.85);
     }
 
     /* ── BRANDS ── */
@@ -322,88 +326,99 @@
     .brand-card:hover::after { opacity: 1; }
     .brand-card:hover .card-mark { transform: scale(1.05); }
     .card-mark { transition: transform 0.4s ease; margin-bottom: 1.6rem; }
+    /* "Gaias" super labels — 11px all-caps is decorative brand labeling */
     .card-super {
-      font-family: 'Josefin Sans', sans-serif; font-weight: 200;
-      font-size: 0.42rem; letter-spacing: 0.5em; text-transform: uppercase;
-      color: rgba(122,79,46,0.65); margin-bottom: 0.3rem; line-height: 1;
+      font-family: 'Josefin Sans', sans-serif; font-weight: 300;
+      font-size: 11px; letter-spacing: 0.45em; text-transform: uppercase;
+      color: rgba(122,79,46,0.72); margin-bottom: 0.3rem; line-height: 1;
     }
     .card-name {
       font-weight: 300; font-size: 2.2rem; letter-spacing: 0.35em;
       padding-left: 0.35em; text-transform: uppercase;
       color: var(--earth); line-height: 1; margin-bottom: 0.9rem;
     }
-    .card-tagline { font-style: italic; font-size: 0.84rem; letter-spacing: 0.12em; color: rgba(122,79,46,0.88); margin-bottom: 1.2rem; }
-    .card-desc { font-size: 0.92rem; line-height: 1.78; color: rgba(46,26,10,0.82); font-style: normal; flex: 1; }
+    /* Taglines use italic as a typographic convention for product subtitles */
+    .card-tagline { font-style: italic; font-size: 0.9rem; letter-spacing: 0.08em; color: rgba(122,79,46,0.90); margin-bottom: 1.2rem; }
+    .card-desc { font-size: 1rem; line-height: 1.75; color: rgba(46,26,10,0.82); font-style: normal; flex: 1; }
+    /* Status badge labels — 11px minimum for all-caps badge text */
     .card-status {
-      margin-top: 1.8rem; font-family: 'Josefin Sans', sans-serif; font-weight: 200;
-      font-size: 0.42rem; letter-spacing: 0.35em; text-transform: uppercase;
-      padding: 0.3rem 0.7rem; border-radius: 2px; border: 1px solid;
+      margin-top: 1.8rem; font-family: 'Josefin Sans', sans-serif; font-weight: 300;
+      font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase;
+      padding: 0.35rem 0.8rem; border-radius: 2px; border: 1px solid;
     }
-    .status-live    { color: rgba(61,74,50,0.75);  border-color: rgba(61,74,50,0.55); }
-    .status-soon    { color: rgba(122,79,46,0.65); border-color: rgba(122,79,46,0.50); }
-    .status-concept { color: rgba(122,79,46,0.60); border-color: rgba(122,79,46,0.42); }
+    .status-live    { color: rgba(61,74,50,0.82);  border-color: rgba(61,74,50,0.60); }
+    .status-soon    { color: rgba(122,79,46,0.78); border-color: rgba(122,79,46,0.55); }
+    .status-concept { color: rgba(122,79,46,0.72); border-color: rgba(122,79,46,0.48); }
 
     /* ── FOUNDER ── */
     .founder { background: var(--earth); border-bottom: 1px solid rgba(196,162,90,0.06); }
     .founder-inner {
-      max-width: 960px; margin: 0 auto; padding: 6.5rem 3rem 6rem;
+      max-width: 960px; margin: 0 auto; padding: 4rem 3rem 6rem;
       display: grid; grid-template-columns: 230px 1fr; gap: 5.5rem; align-items: start;
     }
-    @media (max-width: 700px) { .founder-inner { grid-template-columns: 1fr; gap: 3rem; padding: 4rem 1.5rem; } }
+    @media (max-width: 700px) { .founder-inner { grid-template-columns: 1fr; gap: 3rem; padding: 3rem 1.5rem 4rem; } }
     @media (max-width: 600px) { .problem-inner, .belief-inner, .brands-inner, .contact-inner { padding-left: 1.5rem; padding-right: 1.5rem; } }
     .founder-left { position: sticky; top: 80px; }
+    @media (max-width: 700px) {
+      .founder-left { position: static; }
+      .founder-photo-wrap { max-width: 280px; margin: 1.5rem auto 0; }
+    }
     .founder-eyebrow {
-      font-family: 'Josefin Sans', sans-serif; font-weight: 200;
-      font-size: 0.4rem; letter-spacing: 0.55em; text-transform: uppercase;
-      color: rgba(196,162,90,0.58); margin-bottom: 1.2rem; display: block;
+      font-family: 'Josefin Sans', sans-serif; font-weight: 300;
+      font-size: 11px; letter-spacing: 0.5em; text-transform: uppercase;
+      color: rgba(196,162,90,0.75); margin-bottom: 1.2rem; display: block;
     }
     .founder-name {
-      font-weight: 300; font-size: 2.8rem; letter-spacing: 0.3em;
+      font-weight: 300; font-size: 2.6rem; letter-spacing: 0.3em;
       text-transform: uppercase; color: rgba(237,224,204,0.95);
       line-height: 1; margin-bottom: 0.6rem;
     }
-    .founder-title { font-style: italic; font-size: 0.85rem; color: rgba(196,162,90,0.68); letter-spacing: 0.08em; margin-bottom: 2rem; }
-    .founder-rule { width: 28px; height: 1px; background: rgba(196,162,90,0.22); margin-bottom: 1.6rem; }
+    /* Founder title uses italic as a conventional typographic treatment for roles/titles */
+    .founder-title { font-style: italic; font-size: 0.95rem; color: rgba(196,162,90,0.80); letter-spacing: 0.05em; margin-bottom: 2rem; }
+    .founder-rule { width: 28px; height: 1px; background: rgba(196,162,90,0.25); margin-bottom: 1.6rem; }
     .founder-location-label {
-      font-family: 'Josefin Sans', sans-serif; font-weight: 200;
-      font-size: 0.38rem; letter-spacing: 0.38em; text-transform: uppercase;
-      color: rgba(196,162,90,0.48); margin-bottom: 0.3rem; display: block;
+      font-family: 'Josefin Sans', sans-serif; font-weight: 300;
+      font-size: 11px; letter-spacing: 0.38em; text-transform: uppercase;
+      color: rgba(196,162,90,0.65); margin-bottom: 0.3rem; display: block;
     }
     .founder-location {
-      font-family: 'Josefin Sans', sans-serif; font-weight: 200;
-      font-size: 0.46rem; letter-spacing: 0.3em; text-transform: uppercase;
-      color: rgba(196,162,90,0.82); margin-bottom: 1.2rem;
+      font-family: 'Josefin Sans', sans-serif; font-weight: 300;
+      font-size: 12px; letter-spacing: 0.28em; text-transform: uppercase;
+      color: rgba(196,162,90,0.90); margin-bottom: 1.2rem;
     }
     .founder-location-note {
-      font-size: 0.88rem; font-style: italic; line-height: 1.7;
-      color: rgba(196,162,90,0.5);
+      font-size: 0.92rem; font-style: normal; line-height: 1.72;
+      color: rgba(196,162,90,0.72);
     }
+    /* Pull quote italic is standard typographic convention for block quotes */
     .founder-pullquote {
-      font-size: clamp(1.1rem, 2vw, 1.4rem); font-style: italic; font-weight: 300;
-      line-height: 1.62; color: rgba(196,162,90,0.88); margin-bottom: 2.5rem;
-      padding-left: 1.5rem; border-left: 1px solid rgba(196,162,90,0.18);
+      font-size: clamp(1.1rem, 2vw, 1.35rem); font-style: italic; font-weight: 300;
+      line-height: 1.65; color: rgba(196,162,90,0.92); margin-bottom: 2.5rem;
+      padding-left: 1.5rem; border-left: 2px solid rgba(196,162,90,0.25);
     }
-    .founder-body { font-size: 1.02rem; line-height: 1.96; color: rgba(237,224,204,0.90); font-style: normal; }
+    .founder-body { font-size: 1.05rem; line-height: 1.92; color: rgba(237,224,204,0.92); font-style: normal; }
     .founder-body p + p { margin-top: 1.5rem; }
-    .founder-body em { font-style: italic; color: rgba(196,162,90,0.90); }
+    /* em within body text = semantic emphasis via italic — standard convention */
+    .founder-body em { font-style: italic; color: rgba(196,162,90,0.95); font-weight: 400; }
 
     /* ── CONTACT ── */
     .contact { background: var(--bark); text-align: center; padding: 6.5rem 2rem; }
     .contact-title {
       font-weight: 300; font-size: 1.8rem; letter-spacing: 0.3em;
-      text-transform: uppercase; color: rgba(237,224,204,0.85); margin-bottom: 1.2rem;
+      text-transform: uppercase; color: rgba(237,224,204,0.90); margin-bottom: 1.2rem;
     }
     .contact-body {
-      font-style: normal; font-size: 0.97rem; line-height: 1.86;
-      color: rgba(196,162,90,0.82); max-width: 480px; margin: 0 auto 2.5rem;
+      font-style: normal; font-size: 1rem; line-height: 1.85;
+      color: rgba(196,162,90,0.90); max-width: 480px; margin: 0 auto 2.5rem;
     }
+    /* Email link uses Josefin Sans at 12px — legible for a single-line CTA */
     .contact-email {
-      display: inline-block; font-family: 'Josefin Sans', sans-serif; font-weight: 200;
-      font-size: 0.52rem; letter-spacing: 0.3em; text-transform: uppercase;
-      color: rgba(196,162,90,0.70); text-decoration: none;
-      border-bottom: 1px solid rgba(196,162,90,0.2); padding-bottom: 3px; transition: all 0.2s;
+      display: inline-block; font-family: 'Josefin Sans', sans-serif; font-weight: 300;
+      font-size: 12px; letter-spacing: 0.28em; text-transform: uppercase;
+      color: rgba(196,162,90,0.85); text-decoration: none;
+      border-bottom: 1px solid rgba(196,162,90,0.3); padding-bottom: 3px; transition: all 0.2s;
     }
-    .contact-email:hover { color: rgba(196,162,90,0.88); border-color: rgba(196,162,90,0.65); }
+    .contact-email:hover { color: rgba(196,162,90,1); border-color: rgba(196,162,90,0.75); }
 
     /* ── FOOTER ── */
     footer {
@@ -411,39 +426,31 @@
       align-items: center; gap: 1.2rem; text-align: center;
       background: var(--earth); border-top: 1px solid rgba(196,162,90,0.06);
     }
-    .footer-divider { width: 36px; height: 1px; background: rgba(196,162,90,0.15); }
-    .footer-tagline { font-style: italic; font-size: 0.88rem; letter-spacing: 0.12em; color: rgba(196,162,90,0.65); }
+    .footer-divider { width: 36px; height: 1px; background: rgba(196,162,90,0.18); }
+    .footer-tagline { font-style: italic; font-size: 0.9rem; letter-spacing: 0.1em; color: rgba(196,162,90,0.78); }
     .footer-links { display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; }
+    /* Footer nav links — 11px is minimum for supplementary nav items */
     .footer-links a {
-      font-family: 'Josefin Sans', sans-serif; font-weight: 200; font-size: 0.42rem;
-      letter-spacing: 0.35em; text-transform: uppercase; color: rgba(196,162,90,0.72);
+      font-family: 'Josefin Sans', sans-serif; font-weight: 300; font-size: 11px;
+      letter-spacing: 0.32em; text-transform: uppercase; color: rgba(196,162,90,0.80);
       text-decoration: none; transition: color 0.2s;
     }
-    .footer-links a:hover { color: rgba(196,162,90,0.88); }
+    .footer-links a:hover { color: rgba(196,162,90,1); }
     .footer-legal {
-      font-family: 'Josefin Sans', sans-serif; font-weight: 200;
-      font-size: 0.4rem; letter-spacing: 0.22em; color: rgba(196,162,90,0.45);
+      font-family: 'Josefin Sans', sans-serif; font-weight: 300;
+      font-size: 11px; letter-spacing: 0.2em; color: rgba(196,162,90,0.55);
     }
 
     /* ── FOUNDER PHOTO ── */
-    .founder-photo-wrap {
-      margin-top: 2.2rem;
-      position: relative;
-    }
-    .founder-photo {
-      width: 100%;
-      display: block;
-      border: 1px solid rgba(196,162,90,0.12);
-    }
+    .founder-photo-wrap { margin-top: 2.2rem; position: relative; }
+    .founder-photo { width: 100%; display: block; border: 1px solid rgba(196,162,90,0.15); }
+    /* Photo caption — 11px is standard for image captions */
     .founder-photo-caption {
-      margin-top: 0.8rem;
+      margin-top: 0.75rem;
       font-family: 'Josefin Sans', sans-serif;
-      font-weight: 200;
-      font-size: 0.38rem;
-      letter-spacing: 0.35em;
-      text-transform: uppercase;
-      color: rgba(196,162,90,0.40);
-      text-align: center;
+      font-weight: 300; font-size: 11px;
+      letter-spacing: 0.32em; text-transform: uppercase;
+      color: rgba(196,162,90,0.55); text-align: center;
     }
   </style>
 </head>
@@ -586,7 +593,7 @@
     <span class="section-label">How We Move in the World</span>
     <h2 class="section-title">Core Principles</h2>
     <div class="section-rule"></div>
-    <p class="section-body">A living guide for every member of the Gaia collective — and the lens through which we vet every partner, producer, and place.</p>
+    <p class="section-body">A living guide for all Gaia global brands — and the lens through which we vet every partner, producer, and place.</p>
   </div>
   <div class="principles-grid">
     <div class="principle-card reveal">
@@ -889,6 +896,12 @@
 
 <!-- ⑦ FOUNDER -->
 <section class="founder" id="founder">
+  <div class="section-header" style="padding-top:5.5rem; padding-bottom:2rem;">
+    <span class="section-label" style="color:rgba(196,162,90,0.55);">The Person Behind It</span>
+    <h2 class="section-title" style="color:rgba(237,224,204,0.88);">Our Story</h2>
+    <div class="section-rule" style="background:rgba(196,162,90,0.2);"></div>
+    <p class="section-body" style="color:rgba(196,162,90,0.65);">Gaia was born from a life lived close to the earth — and a belief that the companies doing the most honest work in the world deserve to be found.</p>
+  </div>
   <div class="founder-inner">
     <div class="founder-left">
       <span class="founder-eyebrow">The Founder</span>
@@ -943,7 +956,7 @@
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // Scroll-reveal
   const reveals = document.querySelectorAll('.reveal');
-  const io  const observer = new IntersectionObserver((entries) => {
+  const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
   }, { threshold: 0.12 });
   reveals.forEach(el => observer.observe(el));

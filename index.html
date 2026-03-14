@@ -306,10 +306,16 @@
     /* ── BRANDS ── */
     .brands { background: var(--mist); border-bottom: 1px solid rgba(122,79,46,0.07); }
     .brands-grid {
-      display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 1px; background: rgba(122,79,46,0.08);
       border-top: 1px solid rgba(122,79,46,0.08);
       border-bottom: 1px solid rgba(122,79,46,0.08);
+    }
+    @media (max-width: 980px) {
+      .brands-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 640px) {
+      .brands-grid { grid-template-columns: 1fr; }
     }
     .brand-card {
       background: var(--parchment); padding: 3rem 2.5rem;
@@ -509,119 +515,9 @@
     <span></span><span></span><span></span>
   </button>
   <div class="hero-nav" id="heroNav">
-    <a href="#brands" class="primary">Explore the Collective</a>
+    <a href="#brands" class="primary">Explore the Branches</a>
     <a href="#problem">Why It Exists</a>
     <a href="#contact">Get in Touch</a>
-  </div>
-</section>
-
-<!-- ② PULL QUOTE -->
-<section class="pull-quote">
-  <p class="pull-quote-text reveal">
-    Through Gaia's Global, you are investing in more than goods or services — you are connecting with the person who understood their craft, patiently honed their practice, and made something worth finding. Through Gaia's Global, <em>they found you.</em>
-  </p>
-</section>
-
-<!-- ③ THE PROBLEM -->
-<section class="problem" id="problem">
-  <div class="problem-inner">
-    <span class="problem-eyebrow reveal">Why This Exists</span>
-    <h2 class="problem-headline reveal">The world built platforms</h2>
-    <span class="problem-headline-sub reveal">that extract more than they give.</span>
-    <div class="problem-grid reveal">
-      <div class="problem-item">
-        <div class="problem-item-num">I</div>
-        <span class="problem-item-label">The Displacement</span>
-        <p class="problem-item-text">Independent producers — the coffee farmer, the small-batch vintner, the herbalist tending her land — have been systematically pushed to the margins by platforms <em>principally designed to grow shareholder value</em>. Their craft is real. Their visibility is not.</p>
-      </div>
-      <div class="problem-item">
-        <div class="problem-item-num">II</div>
-        <span class="problem-item-label">The Extraction</span>
-        <p class="problem-item-text">The large aggregators take a cut of every transaction, set the rules of discovery, and own the relationship with the customer. The maker becomes a supplier. The community becomes a market. <em>The connection becomes a conversion.</em></p>
-      </div>
-      <div class="problem-item">
-        <div class="problem-item-num">III</div>
-        <span class="problem-item-label">The Distance</span>
-        <p class="problem-item-text">When you buy from a corporation, you rarely know who grew it, who made it, or what conditions they worked in. That distance is not accidental. <em>Anonymity protects the middleman.</em> Transparency would cost them.</p>
-      </div>
-      <div class="problem-item">
-        <div class="problem-item-num">IV</div>
-        <span class="problem-item-label">The Alternative</span>
-        <p class="problem-item-text">There are thousands of small, rooted companies doing extraordinary work around this globe — <em>treating their craft as sacred</em>, their community as family, and the earth as something worth protecting. They are simply hard to find.</p>
-      </div>
-    </div>
-    <p class="problem-close reveal">Gaia is not a reaction to this. It is a rerouting — a set of direct lines between the people who care deeply about what they make and the people who will care about what they buy.</p>
-  </div>
-</section>
-
-<!-- ④ THE BELIEF -->
-<section class="belief" id="belief">
-  <div class="belief-inner">
-    <div class="belief-top">
-      <div class="reveal">
-        <span class="belief-eyebrow">What We Hold True</span>
-        <h2 class="belief-title">Connections that mean something<br>more than money.</h2>
-      </div>
-      <p class="belief-statement reveal">
-        We believe the things we consume should connect us — to the <em>land they came from</em>, the <em>hands that made them</em>, and the <em>world we share</em>. That a moral compass is not a liability in business. That careful craftsmanship is not nostalgia — it is the most honest form of commerce that exists.
-      </p>
-    </div>
-    <div class="belief-pillars reveal">
-      <div class="belief-pillar">
-        <div class="belief-pillar-glyph">⌘</div>
-        <div class="belief-pillar-name">Direct Connection</div>
-        <p class="belief-pillar-text">No middlemen extracting value. No algorithms deciding who gets found. A direct line between maker and the person who will love what they make.</p>
-      </div>
-      <div class="belief-pillar">
-        <div class="belief-pillar-glyph">◈</div>
-        <div class="belief-pillar-name">Values Alignment</div>
-        <p class="belief-pillar-text">Every producer in the Gaia network is evaluated against a living set of principles — not just quality, but ethics, care, and relationship to the earth and community they serve.</p>
-      </div>
-      <div class="belief-pillar">
-        <div class="belief-pillar-glyph">◉</div>
-        <div class="belief-pillar-name">Rooted in Place</div>
-        <p class="belief-pillar-text">The best things are made by people deeply tied to where they are — to a specific soil, a specific community, a specific way of moving through the world.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ⑤ PRINCIPLES -->
-<section class="principles" id="principles">
-  <div class="section-header">
-    <span class="section-label">How We Move in the World</span>
-    <h2 class="section-title">Core Principles</h2>
-    <div class="section-rule"></div>
-    <p class="section-body">A living guide for all Gaia global brands — and the lens through which we vet every partner, producer, and place.</p>
-  </div>
-  <div class="principles-grid">
-    <div class="principle-card reveal">
-      <div class="principle-numeral">I</div>
-      <h3 class="principle-name">Act from Love and Purpose</h3>
-      <p class="principle-body">Let compassion, deep aligned purpose, and a sense of sacred connection guide your choices — ensuring your actions nourish the individual, the collective, and the Earth.</p>
-    </div>
-    <div class="principle-card reveal">
-      <div class="principle-numeral">II</div>
-      <h3 class="principle-name">Live Simply in Harmony with Nature</h3>
-      <p class="principle-body">Embrace minimalism and cultivate an interdependent, sacred relationship with the natural world.</p>
-      <p class="principle-note">Humbly acknowledge there are intelligences other than our own — teachers all around us.</p>
-    </div>
-    <div class="principle-card reveal">
-      <div class="principle-numeral">III</div>
-      <h3 class="principle-name">Foster Self-Sufficiency and Mutual Support</h3>
-      <p class="principle-body">Cultivate relationships that generate energetic reciprocity, reduce reliance on exploitative structures, and give back through generosity and community care.</p>
-      <p class="principle-note">Growing together, the asters and the goldenrod receive more pollinator visits than they would growing alone.</p>
-    </div>
-    <div class="principle-card reveal">
-      <div class="principle-numeral">IV</div>
-      <h3 class="principle-name">Create Spaces of Balance and Well-Being</h3>
-      <p class="principle-body">Prioritize safety, peace, and sanctuary — for ourselves and loved ones — through practices that nurture physical, emotional, and spiritual wellness.</p>
-    </div>
-    <div class="principle-card full reveal">
-      <div class="principle-numeral">V</div>
-      <h3 class="principle-name">Honor the Messy Process of Growth</h3>
-      <p class="principle-body">Accept imperfection, celebrate experimentation, and recognize that personal and spiritual development often flourishes in the midst of life's beautiful unfinished edges.</p>
-    </div>
   </div>
 </section>
 
@@ -889,9 +785,145 @@
       <div class="card-tagline">Hemp · Botanicals · Wellness</div>
       <p class="card-desc">Regenerative hemp growers and plant-based wellness makers rooted in honest practice.</p>
       <span class="card-status status-concept">Concept</span>
+
+    <a class="brand-card" href="#" onclick="return false;">
+      <div class="card-mark">
+        <svg width="56" height="56" viewBox="60 60 80 80" fill="none">
+          <defs><clipPath id="c-gatherings"><circle cx="100" cy="100" r="39"/></clipPath></defs>
+          <g clip-path="url(#c-gatherings)">
+            <circle cx="100" cy="100" r="38" fill="none" stroke="#7A4F2E" stroke-width="2.5" opacity="0.18"/>
+            <path d="M 67.1 119.0 L 68.4 121.2 L 70.0 123.3 L 71.6 125.2 L 73.4 127.1 L 75.2 128.8 L 77.3 130.4 L 79.4 131.9 L 81.6 133.2 L 83.8 134.4 L 86.2 135.4 L 88.6 136.3 L 91.1 136.9 L 93.6 137.5 L 96.2 137.8 L 98.7 138.0 L 101.3 138.0 L 103.8 137.8 L 106.4 137.5 L 108.9 136.9 L 111.4 136.3 L 113.8 135.4 L 116.2 134.4 L 118.4 133.2 L 120.6 131.9 L 122.7 130.4 L 124.8 128.8 L 126.6 127.1 L 128.4 125.2 L 130.0 123.3 L 131.6 121.2 L 132.9 119.0 L 131.6 116.8 L 130.0 114.7 L 128.4 112.8 L 126.6 110.9 L 124.8 109.2 L 122.7 107.6 L 120.6 106.1 L 118.4 104.8 L 116.2 103.6 L 113.8 102.6 L 111.4 101.7 L 108.9 101.1 L 106.4 100.5 L 103.8 100.2 L 101.3 100.0 L 98.7 100.0 L 96.2 100.2 L 93.6 100.5 L 91.1 101.1 L 88.6 101.7 L 86.2 102.6 L 83.8 103.6 L 81.6 104.8 L 79.4 106.1 L 77.3 107.6 L 75.2 109.2 L 73.4 110.9 L 71.6 112.8 L 70.0 114.7 L 68.4 116.8 L 67.1 119.0 Z" stroke="rgba(122,79,46,0.28)" stroke-width="0.6" fill="rgba(122,79,46,0.04)"/>
+            <path d="M 67.1 81.0 L 65.9 83.3 L 64.8 85.6 L 63.9 88.0 L 63.2 90.5 L 62.7 93.0 L 62.3 95.5 L 62.0 98.1 L 62.0 100.6 L 62.1 103.2 L 62.4 105.8 L 62.9 108.3 L 63.6 110.8 L 64.4 113.2 L 65.3 115.6 L 66.5 117.9 L 67.8 120.1 L 69.2 122.2 L 70.8 124.3 L 72.5 126.2 L 74.3 128.0 L 76.2 129.7 L 78.3 131.2 L 80.4 132.6 L 82.7 133.8 L 85.0 134.9 L 87.4 135.9 L 89.9 136.6 L 92.4 137.2 L 94.9 137.7 L 97.4 137.9 L 100.0 138.0 L 101.2 135.7 L 102.3 133.4 L 103.2 131.0 L 103.9 128.5 L 104.4 126.0 L 104.8 123.5 L 105.0 120.9 L 105.1 118.4 L 105.0 115.8 L 104.7 113.2 L 104.2 110.7 L 103.5 108.2 L 102.7 105.8 L 101.8 103.4 L 100.6 101.1 L 99.3 98.9 L 97.9 96.8 L 96.3 94.7 L 94.6 92.8 L 92.8 91.0 L 90.9 89.3 L 88.8 87.8 L 86.6 86.4 L 84.4 85.2 L 82.1 84.1 L 79.7 83.1 L 77.2 82.4 L 74.7 81.8 L 72.2 81.3 L 69.7 81.1 L 67.1 81.0 Z" stroke="rgba(122,79,46,0.28)" stroke-width="0.6" fill="rgba(122,79,46,0.04)"/>
+            <path d="M 100.0 62.0 L 97.4 62.1 L 94.9 62.3 L 92.4 62.8 L 89.9 63.4 L 87.4 64.1 L 85.0 65.1 L 82.7 66.2 L 80.4 67.4 L 78.3 68.8 L 76.2 70.3 L 74.3 72.0 L 72.5 73.8 L 70.8 75.7 L 69.2 77.8 L 67.8 79.9 L 66.5 82.1 L 65.3 84.4 L 64.4 86.8 L 63.6 89.2 L 62.9 91.7 L 62.4 94.2 L 62.1 96.8 L 62.0 99.4 L 62.0 101.9 L 62.3 104.5 L 62.7 107.0 L 63.2 109.5 L 63.9 112.0 L 64.8 114.4 L 65.9 116.7 L 67.1 119.0 L 69.7 118.9 L 72.2 118.7 L 74.7 118.2 L 77.2 117.6 L 79.7 116.9 L 82.1 115.9 L 84.4 114.8 L 86.6 113.6 L 88.8 112.2 L 90.9 110.7 L 92.8 109.0 L 94.6 107.2 L 96.3 105.3 L 97.9 103.2 L 99.3 101.1 L 100.6 98.9 L 101.8 96.6 L 102.7 94.2 L 103.5 91.8 L 104.2 89.3 L 104.7 86.8 L 105.0 84.2 L 105.1 81.6 L 105.0 79.1 L 104.8 76.5 L 104.4 74.0 L 103.9 71.5 L 103.2 69.0 L 102.3 66.6 L 101.2 64.3 L 100.0 62.0 Z" stroke="rgba(122,79,46,0.28)" stroke-width="0.6" fill="rgba(122,79,46,0.04)"/>
+            <path d="M 132.9 81.0 L 131.6 78.8 L 130.0 76.7 L 128.4 74.8 L 126.6 72.9 L 124.8 71.2 L 122.7 69.6 L 120.6 68.1 L 118.4 66.8 L 116.2 65.6 L 113.8 64.6 L 111.4 63.7 L 108.9 63.1 L 106.4 62.5 L 103.8 62.2 L 101.3 62.0 L 98.7 62.0 L 96.2 62.2 L 93.6 62.5 L 91.1 63.1 L 88.6 63.7 L 86.2 64.6 L 83.8 65.6 L 81.6 66.8 L 79.4 68.1 L 77.3 69.6 L 75.2 71.2 L 73.4 72.9 L 71.6 74.8 L 70.0 76.7 L 68.4 78.8 L 67.1 81.0 L 68.4 83.2 L 70.0 85.3 L 71.6 87.2 L 73.4 89.1 L 75.2 90.8 L 77.3 92.4 L 79.4 93.9 L 81.6 95.2 L 83.8 96.4 L 86.2 97.4 L 88.6 98.3 L 91.1 98.9 L 93.6 99.5 L 96.2 99.8 L 98.7 100.0 L 101.3 100.0 L 103.8 99.8 L 106.4 99.5 L 108.9 98.9 L 111.4 98.3 L 113.8 97.4 L 116.2 96.4 L 118.4 95.2 L 120.6 93.9 L 122.7 92.4 L 124.8 90.8 L 126.6 89.1 L 128.4 87.2 L 130.0 85.3 L 131.6 83.2 L 132.9 81.0 Z" stroke="rgba(122,79,46,0.28)" stroke-width="0.6" fill="rgba(122,79,46,0.04)"/>
+            <path d="M 132.9 119.0 L 134.1 116.7 L 135.2 114.4 L 136.1 112.0 L 136.8 109.5 L 137.3 107.0 L 137.7 104.5 L 138.0 101.9 L 138.0 99.4 L 137.9 96.8 L 137.6 94.2 L 137.1 91.7 L 136.4 89.2 L 135.6 86.8 L 134.7 84.4 L 133.5 82.1 L 132.2 79.9 L 130.8 77.8 L 129.2 75.7 L 127.5 73.8 L 125.7 72.0 L 123.8 70.3 L 121.7 68.8 L 119.6 67.4 L 117.3 66.2 L 115.0 65.1 L 112.6 64.1 L 110.1 63.4 L 107.6 62.8 L 105.1 62.3 L 102.6 62.1 L 100.0 62.0 L 98.8 64.3 L 97.7 66.6 L 96.8 69.0 L 96.1 71.5 L 95.6 74.0 L 95.2 76.5 L 95.0 79.1 L 94.9 81.6 L 95.0 84.2 L 95.3 86.8 L 95.8 89.3 L 96.5 91.8 L 97.3 94.2 L 98.2 96.6 L 99.4 98.9 L 100.7 101.1 L 102.1 103.2 L 103.7 105.3 L 105.4 107.2 L 107.2 109.0 L 109.1 110.7 L 111.2 112.2 L 113.4 113.6 L 115.6 114.8 L 117.9 115.9 L 120.3 116.9 L 122.8 117.6 L 125.3 118.2 L 127.8 118.7 L 130.3 118.9 L 132.9 119.0 Z" stroke="rgba(122,79,46,0.28)" stroke-width="0.6" fill="rgba(122,79,46,0.04)"/>
+            <path d="M 100.0 138.0 L 102.6 137.9 L 105.1 137.7 L 107.6 137.2 L 110.1 136.6 L 112.6 135.9 L 115.0 134.9 L 117.3 133.8 L 119.6 132.6 L 121.7 131.2 L 123.8 129.7 L 125.7 128.0 L 127.5 126.2 L 129.2 124.3 L 130.8 122.2 L 132.2 120.1 L 133.5 117.9 L 134.7 115.6 L 135.6 113.2 L 136.4 110.8 L 137.1 108.3 L 137.6 105.8 L 137.9 103.2 L 138.0 100.6 L 138.0 98.1 L 137.7 95.5 L 137.3 93.0 L 136.8 90.5 L 136.1 88.0 L 135.2 85.6 L 134.1 83.3 L 132.9 81.0 L 130.3 81.1 L 127.8 81.3 L 125.3 81.8 L 122.8 82.4 L 120.3 83.1 L 117.9 84.1 L 115.6 85.2 L 113.4 86.4 L 111.2 87.8 L 109.1 89.3 L 107.2 91.0 L 105.4 92.8 L 103.7 94.7 L 102.1 96.8 L 100.7 98.9 L 99.4 101.1 L 98.2 103.4 L 97.3 105.8 L 96.5 108.2 L 95.8 110.7 L 95.3 113.2 L 95.0 115.8 L 94.9 118.4 L 95.0 120.9 L 95.2 123.5 L 95.6 126.0 L 96.1 128.5 L 96.8 131.0 L 97.7 133.4 L 98.8 135.7 L 100.0 138.0 Z" stroke="rgba(122,79,46,0.28)" stroke-width="0.6" fill="rgba(122,79,46,0.04)"/>
+            <path d="M89 92h22a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H99l-5 5v-5h-5a3 3 0 0 1-3-3V95a3 3 0 0 1 3-3Z" fill="rgba(122,79,46,0.18)" stroke="#7A4F2E" stroke-width="1.1" stroke-linejoin="round"/>
+            <circle cx="95" cy="100" r="1.3" fill="#7A4F2E"/>
+            <circle cx="100" cy="100" r="1.3" fill="#7A4F2E"/>
+            <circle cx="105" cy="100" r="1.3" fill="#7A4F2E"/>
+          </g>
+        </svg>
+      </div>
+      <span class="card-super">Gaias</span>
+      <div class="card-name">Gatherings</div>
+      <div class="card-tagline">Community · Commentary · Exchange</div>
+      <p class="card-desc">A place for conversation, field notes, questions, and the shared knowledge that helps rooted communities grow.</p>
+      <span class="card-status status-soon">Soon</span>
     </a>
   </div>
 </section>
+
+<!-- ② PULL QUOTE -->
+<section class="pull-quote">
+  <p class="pull-quote-text reveal">
+    Through Gaia's Global, you are investing in more than goods or services — you are connecting with the person who understood their craft, patiently honed their practice, and made something worth finding. Through Gaia's Global, <em>they found you.</em>
+  </p>
+</section>
+
+<!-- ③ THE PROBLEM -->
+<section class="problem" id="problem">
+  <div class="problem-inner">
+    <span class="problem-eyebrow reveal">Why This Exists</span>
+    <h2 class="problem-headline reveal">The world built platforms</h2>
+    <span class="problem-headline-sub reveal">that extract more than they give.</span>
+    <div class="problem-grid reveal">
+      <div class="problem-item">
+        <div class="problem-item-num">I</div>
+        <span class="problem-item-label">The Displacement</span>
+        <p class="problem-item-text">Independent producers — the coffee farmer, the small-batch vintner, the herbalist tending her land — have been systematically pushed to the margins by platforms <em>principally designed to grow shareholder value</em>. Their craft is real. Their visibility is not.</p>
+      </div>
+      <div class="problem-item">
+        <div class="problem-item-num">II</div>
+        <span class="problem-item-label">The Extraction</span>
+        <p class="problem-item-text">The large aggregators take a cut of every transaction, set the rules of discovery, and own the relationship with the customer. The maker becomes a supplier. The community becomes a market. <em>The connection becomes a conversion.</em></p>
+      </div>
+      <div class="problem-item">
+        <div class="problem-item-num">III</div>
+        <span class="problem-item-label">The Distance</span>
+        <p class="problem-item-text">When you buy from a corporation, you rarely know who grew it, who made it, or what conditions they worked in. That distance is not accidental. <em>Anonymity protects the middleman.</em> Transparency would cost them.</p>
+      </div>
+      <div class="problem-item">
+        <div class="problem-item-num">IV</div>
+        <span class="problem-item-label">The Alternative</span>
+        <p class="problem-item-text">There are thousands of small, rooted companies doing extraordinary work around this globe — <em>treating their craft as sacred</em>, their community as family, and the earth as something worth protecting. They are simply hard to find.</p>
+      </div>
+    </div>
+    <p class="problem-close reveal">Gaia is not a reaction to this. It is a rerouting — a set of direct lines between the people who care deeply about what they make and the people who will care about what they buy.</p>
+  </div>
+</section>
+
+<!-- ④ THE BELIEF -->
+<section class="belief" id="belief">
+  <div class="belief-inner">
+    <div class="belief-top">
+      <div class="reveal">
+        <span class="belief-eyebrow">What We Hold True</span>
+        <h2 class="belief-title">Connections that mean something<br>more than money.</h2>
+      </div>
+      <p class="belief-statement reveal">
+        We believe the things we consume should connect us — to the <em>land they came from</em>, the <em>hands that made them</em>, and the <em>world we share</em>. That a moral compass is not a liability in business. That careful craftsmanship is not nostalgia — it is the most honest form of commerce that exists.
+      </p>
+    </div>
+    <div class="belief-pillars reveal">
+      <div class="belief-pillar">
+        <div class="belief-pillar-glyph">⌘</div>
+        <div class="belief-pillar-name">Direct Connection</div>
+        <p class="belief-pillar-text">No middlemen extracting value. No algorithms deciding who gets found. A direct line between maker and the person who will love what they make.</p>
+      </div>
+      <div class="belief-pillar">
+        <div class="belief-pillar-glyph">◈</div>
+        <div class="belief-pillar-name">Values Alignment</div>
+        <p class="belief-pillar-text">Every producer in the Gaia network is evaluated against a living set of principles — not just quality, but ethics, care, and relationship to the earth and community they serve.</p>
+      </div>
+      <div class="belief-pillar">
+        <div class="belief-pillar-glyph">◉</div>
+        <div class="belief-pillar-name">Rooted in Place</div>
+        <p class="belief-pillar-text">The best things are made by people deeply tied to where they are — to a specific soil, a specific community, a specific way of moving through the world.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑤ PRINCIPLES -->
+<section class="principles" id="principles">
+  <div class="section-header">
+    <span class="section-label">How We Move in the World</span>
+    <h2 class="section-title">Core Principles</h2>
+    <div class="section-rule"></div>
+    <p class="section-body">A living guide for all Gaia global brands — and the lens through which we vet every partner, producer, and place.</p>
+  </div>
+  <div class="principles-grid">
+    <div class="principle-card reveal">
+      <div class="principle-numeral">I</div>
+      <h3 class="principle-name">Act from Love and Purpose</h3>
+      <p class="principle-body">Let compassion, deep aligned purpose, and a sense of sacred connection guide your choices — ensuring your actions nourish the individual, the collective, and the Earth.</p>
+    </div>
+    <div class="principle-card reveal">
+      <div class="principle-numeral">II</div>
+      <h3 class="principle-name">Live Simply in Harmony with Nature</h3>
+      <p class="principle-body">Embrace minimalism and cultivate an interdependent, sacred relationship with the natural world.</p>
+      <p class="principle-note">Humbly acknowledge there are intelligences other than our own — teachers all around us.</p>
+    </div>
+    <div class="principle-card reveal">
+      <div class="principle-numeral">III</div>
+      <h3 class="principle-name">Foster Self-Sufficiency and Mutual Support</h3>
+      <p class="principle-body">Cultivate relationships that generate energetic reciprocity, reduce reliance on exploitative structures, and give back through generosity and community care.</p>
+      <p class="principle-note">Growing together, the asters and the goldenrod receive more pollinator visits than they would growing alone.</p>
+    </div>
+    <div class="principle-card reveal">
+      <div class="principle-numeral">IV</div>
+      <h3 class="principle-name">Create Spaces of Balance and Well-Being</h3>
+      <p class="principle-body">Prioritize safety, peace, and sanctuary — for ourselves and loved ones — through practices that nurture physical, emotional, and spiritual wellness.</p>
+    </div>
+    <div class="principle-card full reveal">
+      <div class="principle-numeral">V</div>
+      <h3 class="principle-name">Honor the Messy Process of Growth</h3>
+      <p class="principle-body">Accept imperfection, celebrate experimentation, and recognize that personal and spiritual development often flourishes in the midst of life's beautiful unfinished edges.</p>
+    </div>
+  </div>
+</section>
+
 
 <!-- ⑦ FOUNDER -->
 <section class="founder" id="founder">
